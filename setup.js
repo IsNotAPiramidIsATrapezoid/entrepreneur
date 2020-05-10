@@ -2,7 +2,7 @@ const db = require('./')
 
 async function setup () {
   const config = {
-    database: process.env.DB_NAME || 'entrepreneur',
+    database: process.env.DB_NAME || 'delivery',
         username: process.env.DB_USER || 'root',
         password: process.env.DB_PASS || 'password',
         host: process.env.DB_HOST || 'localhost',

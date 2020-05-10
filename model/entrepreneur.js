@@ -15,7 +15,7 @@ module.exports = function setupEntrepreneurModel(config){
             type: Sequelize.STRING,
             allowNull: false
         },
-        emial: {
+        email: {
             type: Sequelize.STRING,
             allowNull: false
         },

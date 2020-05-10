@@ -1,6 +1,6 @@
 const setupDatabase = require('./lib/db')
 const setupEntrepreneurModel = require('./model/entrepreneur')
-
+const setupEntrepreneur = require('./lib/entrepreneur')
 
 module.exports = async function (config) {
   const sequelize = setupDatabase(config)
@@ -14,7 +14,7 @@ module.exports = async function (config) {
     await sequelize.sync({ force: true })
   }
 
-  const Entrepreneur = {}
+  const Entrepreneur = setupEntrepreneur(EntrepreneurModel)
 
   return {
     Entrepreneur
